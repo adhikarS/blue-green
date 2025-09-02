@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-app-html
+data:
+  index.html: |
+    <html>
+    <body>
+    <h1>Version 1 - Blue</h1>
+    <div style="width:100px;height:100px;background:blue;"></div>
+    </body>
+    </html>
+
