@@ -6,7 +6,7 @@ data:
   index.html: |
     <html>
     <body>
-    <h1>Version 1 - Blue</h1>
-    <div style="width:100px;height:100px;background:blue;"></div>
+    <h1>Version 2 - Green</h1>
+    <div style="width:100px;height:100px;background:green;"></div>
     </body>
     </html>
