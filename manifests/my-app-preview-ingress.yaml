@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-app-preview
+  namespace: default  # Assuming your app is in 'default' namespace
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: web  # Uses HTTP entrypoint
+spec:
+  rules:
+  - host: preview.local  # Custom hostname—change if you want (e.g., myapp-preview.local)
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: my-app-preview  # Your preview service name
+            port:
+              number: 80
